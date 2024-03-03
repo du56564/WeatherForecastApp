@@ -39,9 +39,10 @@ or run WeatherControllerTest to test mocked API endpoint.
    }
 
 # Future Implementation
-1. Add Swagger documentation
-2. Add Security to access API through accessToken : can be uniquely generated encoded token or jwt token
-3. I have added one API test due to constraint of time. We can add api unit test and junit test case for each functionality.
+1. Cache from Redis server for scalablity
+2. Add Swagger documentation
+3. Add Security to access API through accessToken : can be uniquely generated encoded token or jwt token
+4. I have added one API test due to constraint of time. We can add api unit test and junit test case for each functionality.
 3. More business rules, for example: zipcode validator
 4. call application.properties from cloudconfig
 5. We can enhance with SpringCloud for distributed architecture
