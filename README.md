@@ -1,4 +1,4 @@
-# weather-app
+# WeatherForecastApp
 
 # Requirements
 Write an API whereInput:
@@ -15,15 +15,15 @@ WeatherApiDao --> WeatherDaoImpl
 
 # Example URL
 Entry Point WeatherAppApplication class to run application then call below API
-http://localhost:8080/api/weather/v1/forecast?zipcode=500081
-http://localhost:8080/api/weather/v1/forecast?zipcode=560076
-http://localhost:8080/api/weather/v1/forecast?zipcode=110053
+1. http://localhost:8080/api/weather/v1/forecast?zipcode=500081
+2. http://localhost:8080/api/weather/v1/forecast?zipcode=560076
+3. http://localhost:8080/api/weather/v1/forecast?zipcode=110053
 
 or run WeatherControllerTest to test mocked API endpoint.
 
 # Response
 1. Success : http://localhost:8080/api/weather/v1/forecast?zipcode=500081
-   {
+   ```{
    "currentTemperature": 27,
    "highTemperature": 34.5,
    "lowTemperature": 22.8,
@@ -32,7 +32,7 @@ or run WeatherControllerTest to test mocked API endpoint.
    "timestamp": "2024-03-03T22:58:40.124609"
    }
 2. Failure: http://localhost:8080/api/weather/v1/forecast?zipcode=
-   {
+   ```{
    "timestamp": "2024-03-03T17:27:09.200+00:00",
    "message": "failure: Invalid zipcode.",
    "details": "uri=/api/weather/v1/forecast"
